@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue">
-
+    
     <!-- Responsividade -->
     <link rel="stylesheet" href="style/responsive.css">
 
@@ -24,7 +24,6 @@
             <a href="#">Seríes</a>
             <a href="#">Filmes</a>
             <a href="#">Documentários</a>
-
         </nav>
 
 
@@ -38,7 +37,7 @@
                 <h3 class="titulo">FOR LIFE</h3>
                 <p class="descricao">Um prisioneiro torna-se advogado, litigando casos para outros detentos enquanto luta para invalidar sua própria sentença de prisão perpétua por um crime que não cometeu. <br>Assista agora a segunda temporada de <b>FOR LIVE</b> que já está disponivel.</p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick='newPopup()'>
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
@@ -87,12 +86,26 @@
         </div>
     </div>
 
+    <div id="popupId" class="popup">
+
+        <iframe width="95%" height="85%" padding-top="50px" src="https://www.youtube.com/embed/uVexZ56TcS0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+       
+        <div class="icone">
+            <button class="botao-fechar" onclick="botaoFechar()">
+                <i class="far fa-window-close"></i>
+            </button>
+        </div>
+    
+    </div>
+
 
     <!--Como a pagina do HTML é carregada sequencialmente, os Scripts são as ultimas coisas para carregarem na página-->
     <script src="https://kit.fontawesome.com/6776ae4faf.js" crossorigin="anonymous"></script> <!--Importando o link para usar icones-->
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="js/abrir-popup.js"></script>
+    
 
 </body>
 </html>

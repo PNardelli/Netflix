@@ -8,10 +8,18 @@
         display: flex;
         flex-direction: row;
     }
+
+    .popup{
+        padding-top: 110px;
+        padding-bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (min-width: 1000px) {  
     .descricao{
         width: 70%;
     }
+
 }
